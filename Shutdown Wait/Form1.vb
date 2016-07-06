@@ -1,9 +1,15 @@
 ﻿Public Class Form1
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+
+        'NOTE: You will need to change the - to / if you want to use this on Windows 7
+
         Shell("shutdown -a")
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        'NOTE: You will need to change the - to / if you want to use this on Windows 7
+
         If ComboBox1.SelectedItem = "Restart" Then
             Shell("shutdown -r -f -t " & TextBox1.Text)
         End If
